@@ -350,7 +350,7 @@
                 - app-vnic AppGigabitEthernet trunk
                 - "vlan {{ cv_collection_vlan }} guest-interface 0"
                 - "guest-ipaddress {{ collection_address }} netmask 255.255.255.0"
-                - vlan 2508 guest-interface 1
+                - "vlan {{ cv_capture_vlan }} guest-interface 1"
                 - mirroring
                 - guest-ipaddress 169.254.1.2 netmask 255.255.255.0
                 - "app-default-gateway {{ collection_gateway }} guest-interface 0"
